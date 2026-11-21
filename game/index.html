@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moonpearl Heist — a stealth game</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="wrap">
+  <canvas id="game" aria-label="Moonpearl Heist: steal the Moonpearl and reach the exit unseen"></canvas>
+  <p id="status" role="status" aria-live="polite"></p>
+  <div class="buttons">
+    <button id="btn-start" type="button">Start</button>
+    <button id="btn-coin" type="button">Throw coin (C)</button>
+    <button id="btn-takedown" type="button">Takedown (E)</button>
+    <button id="btn-pause" type="button">Pause (P)</button>
+    <button id="btn-restart" type="button">Restart (R)</button>
+    <button id="btn-sound" type="button">Sound (M)</button>
+  </div>
+  <p class="hint">WASD / arrows — move &nbsp;·&nbsp; Shift — sneak &nbsp;·&nbsp; Space — wait &nbsp;·&nbsp; C — coin &nbsp;·&nbsp; E — takedown &nbsp;·&nbsp; Click a tile to walk there</p>
+</main>
+<script src="./src/level.js"></script>
+<script src="./src/engine.js"></script>
+<script src="./src/render.js"></script>
+<script src="./src/input.js"></script>
+<script src="./src/audio.js"></script>
+<script src="./src/main.js"></script>
+</body>
+</html>
